@@ -59,6 +59,37 @@
 }
 
 /*** HEADER ***/
+header {
+  background-color: hsl(286.36, 31%, 14%);
+  height: 80vh;
+}
+
+nav {
+  padding: 1.4rem 2rem;
+}
+
+/* main text logo */
+nav span {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.15rem;
+  padding-bottom: 1.5rem;
+}
+
+header h1, header p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+section.header-text {
+  margin: 10rem 0 
+}
 
 /*** Social integrity section ***/
 
@@ -68,5 +99,28 @@
 
 
 /*** LAYOUT ***/
+nav {
+  display: flex;
+  justify-content: center;
+}
 
 /*** MEDIA QUERIES ***/
+@media screen and (max-width: 767px) {
+  #get-started-desktop, .desktop-only-image {
+    display: none;
+  }
+
+  #get-started-mobile {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #get-started-desktop, .desktop-only-image {
+    display: block;
+  }
+
+  #get-started-mobile {
+    display: none;
+  }
+}
