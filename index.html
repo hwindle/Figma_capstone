@@ -16,23 +16,29 @@
   <body>
     <header>
       <nav>
-        <span>Fakebook</span>
+        <span class="uppercase">Fakebook</span>
+        <!-- Hide on mobile view -->
+        <div id="get-started-mobile">
+          <span class="uppercase">Get started</span>
+        </div>
       </nav>
-      <h1>Connecting the world</h1>
+      <h1 class="uppercase">Connecting the world</h1>
       <p>
         A next-gen social networking service, empowering the user, making
         universal connectivity both uninstrusive and immersive.
       </p>
-      <div>
-        <span>Get started</span>
+      <!-- hide this on desktop/tablet view -->
+      <div id="get-started-desktop">
+        <span class="uppercase">Get started</span>
       </div>
     </header>
+    <!-- Hero section - social integrity -->
     <section class="social-integrity">
       <img
         src="./Assets/phone-mockup.png"
         alt="Mobile phone mockup of the webpage"
       />
-      <h2>
+      <h2 class="uppercase">
         Focused on <span class="green">Social</span>
         <span class="orange">Integrity</span>
       </h2>
@@ -41,11 +47,12 @@
         best self without hesitation.
       </p>
     </section>
+    <!-- 2nd section about an open platform -->
     <section class="open-platform">
-      <h2>Say Hello to an Open platform</h2>
+      <h2 class="uppercase">Say Hello to an Open platform</h2>
       <div>
         <article class="orange">
-          <h3>Unity</h3>
+          <h3 class="uppercase">Unity</h3>
           <img src="./Assets/svg/orange_dot.svg" alt="" aria-hidden="true" />
           <p>
             Ensuring peace of mind for all our users, share only what you want.
@@ -53,7 +60,7 @@
           </p>
         </article>
         <article class="green">
-          <h3>Privacy</h3>
+          <h3 class="uppercase">Privacy</h3>
           <img src="./Assets/svg/green_keyhole.svg" alt="" aria-hidden="true" />
           <p>
             With limitless privacy toggle functionality, we will only ever use
@@ -61,7 +68,7 @@
           </p>
         </article>
         <article class="yellow">
-          <h3>Clarity</h3>
+          <h3 class="uppercase">Clarity</h3>
           <img
             src="./Assets/svg/yellow_speaker.svg"
             alt=""
@@ -74,15 +81,16 @@
         </article>
       </div>
     </section>
-    <footer>
+    <!-- footer -->
+    <footer class="uppercase">
       <span>Fakebook</span>
       <div class="yellow">
         <a href="#">Get Started</a>
-        <a href="">About</a>
-        <a href="">Jobs</a>
-        <a href="">Help</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Cookies Policy</a>
+        <a href="#">About</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies Policy</a>
       </div>
       <span class="copyright"> &copy; Fakebook 2022 </span>
     </footer>
