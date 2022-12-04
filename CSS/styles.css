@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Lexend Deca', sans-serif;
-}
-
 /************************
  *  COLOUR PALETTE 
  *
@@ -33,3 +29,44 @@ body {
  *    hsl(321.67, 51%, 73%)
  *
  ************************/
+
+ /*** GENERAL STYLES ***/
+ body {
+  background-color: hsl(70, 27%, 96%);
+  font-size: 16px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/*** UTILITY CLASSES ***/
+.uppercase {
+  text-transform: uppercase;
+}
+
+.orange {
+  color: hsl(7.06, 87%, 58%);
+}
+
+.green {
+  color: hsl(98.1, 42%, 30%);
+}
+
+.yellow {
+  color: hsl(44.39, 90%, 49%);
+}
+
+.off-white {
+  color: hsl(70, 27%, 96%);
+}
+
+/*** HEADER ***/
+
+/*** Social integrity section ***/
+
+/*** Open platform section ***/
+
+/*** FOOTER ***/
+
+
+/*** LAYOUT ***/
+
+/*** MEDIA QUERIES ***/
