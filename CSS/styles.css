@@ -30,11 +30,19 @@
  *
  ************************/
 
- /*** GENERAL STYLES ***/
- body {
+/*** GENERAL STYLES ***/
+body {
   background-color: hsl(70, 27%, 96%);
+  color: #29182e;
   font-size: 16px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 /*** UTILITY CLASSES ***/
@@ -112,11 +120,31 @@ section.header-text {
 }
 
 /*** Social integrity section ***/
+section.social-integrity {
+  padding: 1rem 0;
+  height: auto;
+}
+
+section.social-integrity img {
+  display: block;
+  width: 350px;
+  margin: 1rem auto;
+}
+
+section.social-integrity h2 {
+  letter-spacing: 0.15rem;
+}
+
+section.social-integrity h2,
+section.social-integrity p {
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 1.25rem;
+}
 
 /*** Open platform section ***/
 
 /*** FOOTER ***/
-
 
 /*** LAYOUT ***/
 nav {
@@ -126,13 +154,12 @@ nav {
 
 /*** MEDIA QUERIES ***/
 @media screen and (max-width: 767px) {
-  header, section.social-integrity, section.open-platform {
-    /* each of these sections is 100% of the 
-      mobile phone's viewport */
+  header {
     height: 100vh;
   }
 
-  #get-started-desktop, .desktop-only-image {
+  #get-started-desktop,
+  .desktop-only-image {
     display: none;
   }
 
@@ -142,7 +169,8 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  #get-started-desktop, .desktop-only-image {
+  #get-started-desktop,
+  .desktop-only-image {
     display: block;
   }
 
