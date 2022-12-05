@@ -33,6 +33,7 @@
 /*** GENERAL STYLES ***/
 body {
   background-color: hsl(70, 27%, 96%);
+  /* aubergine color */
   color: #29182e;
   font-size: 16px;
   font-family: "Lexend Deca", sans-serif;
@@ -46,26 +47,8 @@ h4 {
   font-weight: 500;
 }
 
-/*** UTILITY CLASSES ***/
-.uppercase {
-  text-transform: uppercase;
-}
 
-.orange {
-  color: hsl(7.06, 87%, 58%);
-}
 
-.green {
-  color: hsl(98.1, 42%, 30%);
-}
-
-.yellow {
-  color: hsl(44.39, 90%, 49%);
-}
-
-.off-white {
-  color: hsl(70, 27%, 96%);
-}
 
 /*** HEADER ***/
 header {
@@ -78,16 +61,20 @@ nav {
 
 /* main text logo */
 nav span {
+  text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 0.15rem;
+  color: hsl(7.06, 87%, 58%);
 }
 
 .header-text {
   display: flex;
   gap: 2.5rem;
+  color: hsl(70, 27%, 96%);
 }
 
 .header-text h1 {
+  text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.15rem;
 }
@@ -103,8 +90,8 @@ nav span {
   background-color: hsl(7.06, 87%, 58%);
   color: hsl(70, 27%, 96%);
   font-size: 1.6rem;
-  font-weight: 400;
-  /* text-align: center; */
+  font-weight: 500;
+  text-transform: uppercase;
   border: none;
   border-radius: 30px;
 }
@@ -126,12 +113,20 @@ section.social-integrity img {
 }
 
 section.social-integrity h2 {
+  text-transform: uppercase;
   letter-spacing: 0.15rem;
+}
+
+section.social-integrity h2 span:first-child {
+  color: hsl(98.1, 42%, 30%);
+}
+
+section.social-integrity h2 span:last-child {
+  color: hsl(7.06, 87%, 58%);
 }
 
 section.social-integrity h2,
 section.social-integrity p {
-  text-align: center;
   padding: 1.5rem;
   line-height: 1.25rem;
 }
@@ -142,6 +137,7 @@ section.open-platform {
 }
 
 section.open-platform h2 {
+  text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
 }
@@ -154,7 +150,20 @@ section.open-platform article {
   padding: 1.5rem 0;
 }
 
+article.unity {
+  color: hsl(7.06, 87%, 58%);
+}
+
+article.privacy {
+  color: hsl(98.1, 42%, 30%);
+}
+
+article.clarity {
+  color: hsl(44.39, 90%, 49%);
+}
+
 section.open-platform article h3 {
+  text-transform: uppercase;
   padding-bottom: 1rem;
 }
 
@@ -165,12 +174,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-transform: uppercase;
 }
 /* the text logo */
 footer span {
   margin: 3.125rem 2rem 0.8rem 2rem;
   font-size: 2rem;
   letter-spacing: 0.15rem;
+  color: hsl(7.06, 87%, 58%);
 }
 
 footer div {
