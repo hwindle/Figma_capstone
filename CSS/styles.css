@@ -69,6 +69,8 @@ h4 {
 
 /*** HEADER ***/
 header {
+  /* for positioning the bg image in absolute */
+  position: relative;
   background-color: hsl(286.36, 31%, 14%);
 }
 
@@ -80,7 +82,6 @@ nav {
 nav span {
   font-size: 2rem;
   letter-spacing: 0.15rem;
-  text-align: center;
 }
 
 .header-text {
@@ -158,6 +159,39 @@ section.open-platform article {
 }
 
 /*** FOOTER ***/
+footer {
+  background-color: hsl(286.36, 31%, 14%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* the text logo */
+footer span {
+  margin: 3.125rem 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer div a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.15rem;
+  color: hsl(44.39, 90%, 49%);
+}
+
+footer span.copyright {
+  color: hsl(70, 27%, 96%);
+  font-weight: 500;
+  font-size: 1.25rem;
+}
 
 /*** LAYOUT ***/
 nav {
