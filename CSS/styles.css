@@ -61,7 +61,6 @@
 /*** HEADER ***/
 header {
   background-color: hsl(286.36, 31%, 14%);
-  height: 80vh;
 }
 
 nav {
@@ -75,20 +74,41 @@ nav span {
   text-align: center;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: 0.15rem;
-  padding-bottom: 1.5rem;
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-header h1, header p {
+.header-text h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  /* padding: 1.5rem; */
   text-align: center;
-  line-height: 1.5rem;
+}
+
+.header-text p {
+  text-align: center;
+  line-height: 1.25;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: hsl(7.06, 87%, 58%);
+  color: hsl(70, 27%, 96%);
+  font-size: 1.6rem;
+  font-weight: 400;
+  /* text-align: center; */
+  border: none;
+  border-radius: 30px;
 }
 
 section.header-text {
-  margin: 10rem 0 
+  margin: 40% auto;
 }
 
 /*** Social integrity section ***/
@@ -106,6 +126,12 @@ nav {
 
 /*** MEDIA QUERIES ***/
 @media screen and (max-width: 767px) {
+  header, section.social-integrity, section.open-platform {
+    /* each of these sections is 100% of the 
+      mobile phone's viewport */
+    height: 100vh;
+  }
+
   #get-started-desktop, .desktop-only-image {
     display: none;
   }
